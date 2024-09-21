@@ -1,4 +1,4 @@
-# commentary.vim
+# commentary.vim forked from tpope/vim-commentary to use leader key instead of g
 
 Comment stuff out.  Use `gcc` to comment out a line (takes a count),
 `gc` to comment out the target of a motion (for example, `gcap` to
