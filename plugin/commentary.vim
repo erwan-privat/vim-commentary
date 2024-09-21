@@ -110,11 +110,11 @@ onoremap <silent> <Plug>Commentary        :<C-U>call <SID>textobject(get(v:, 'op
 nnoremap <silent> <Plug>ChangeCommentary c:<C-U>call <SID>textobject(1)<CR>
 
 if !hasmapto('<Plug>Commentary') || maparg('gc','n') ==# ''
-  xmap gc  <Plug>Commentary
-  nmap gc  <Plug>Commentary
-  omap gc  <Plug>Commentary
-  nmap gcc <Plug>CommentaryLine
-  nmap gcu <Plug>Commentary<Plug>Commentary
+  xmap <leader>c  <Plug>Commentary
+  nmap <leader>c  <Plug>Commentary
+  omap <leader>c  <Plug>Commentary
+  nmap <leader>cc <Plug>CommentaryLine
+  nmap <leader>cu <Plug>Commentary<Plug>Commentary
 endif
 
 nmap <silent> <Plug>CommentaryUndo :echoerr "Change your <Plug>CommentaryUndo map to <Plug>Commentary<Plug>Commentary"<CR>
