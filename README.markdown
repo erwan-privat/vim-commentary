@@ -1,9 +1,9 @@
 # commentary.vim
 
-Comment stuff out.  Use `gcc` to comment out a line (takes a count),
-`gc` to comment out the target of a motion (for example, `gcap` to
-comment out a paragraph), `gc` in visual mode to comment out the selection,
-and `gc` in operator pending mode to target a comment.  You can also use
+Comment stuff out.  Use `<leader>cc` to comment out a line (takes a count),
+`<leader>c` to comment out the target of a motion (for example, `<leader>cap` to
+comment out a paragraph), `<leader>c` in visual mode to comment out the selection,
+and `<leader>c` in operator pending mode to target a comment.  You can also use
 it as a command, either with a range like `:7,17Commentary`, or as part of a
 `:global` invocation like with `:g/TODO/Commentary`. That's it.
 
@@ -13,7 +13,7 @@ feature (I overlooked
 [tcomment.vim](https://github.com/tomtom/tcomment_vim)).  Striving for
 minimalism, it weighs in at under 100 lines of code.
 
-Oh, and it uncomments, too.  The above maps actually toggle, and `gcgc`
+Oh, and it uncomments, too.  The above maps actually toggle, and `<leader>c<leader>c`
 uncomments a set of adjacent commented lines.
 
 ## Installation
